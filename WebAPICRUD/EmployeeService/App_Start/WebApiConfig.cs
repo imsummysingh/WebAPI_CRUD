@@ -5,6 +5,7 @@ using System.Linq;
 using System.Net.Http.Formatting;
 using System.Web.Http;
 using System.Net.Http.Headers;
+using System.Web.Http.Cors;
 
 namespace EmployeeService
 {
@@ -35,6 +36,16 @@ namespace EmployeeService
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
+
+            //Enable cors
+            EnableCorsAttribute cors = new EnableCorsAttribute("*", "*", "*");
+            config.EnableCors();
+
+            //Http to https
+            //config.Filters.Add(new RequireHttpsAttribute());
+
+            //basic authentication
+            //config.Filters.Add(new BasicAuthenticationAttribute());
 
             //camelcase data formatter
             //config.Formatters.JsonFormatter.SerializerSettings.Formatting = Newtonsoft.Json.Formatting.Indented;

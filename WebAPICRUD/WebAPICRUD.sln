@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeService", "Employee
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeDataAccess", "EmployeeDataAccess\EmployeeDataAccess.csproj", "{3F371C7D-8538-46F3-BDB9-D55882671C1C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientApplication", "ClientApplication\ClientApplication.csproj", "{6946287C-5404-4C4B-A7E4-AF9A1ECBE08E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{3F371C7D-8538-46F3-BDB9-D55882671C1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F371C7D-8538-46F3-BDB9-D55882671C1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F371C7D-8538-46F3-BDB9-D55882671C1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6946287C-5404-4C4B-A7E4-AF9A1ECBE08E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6946287C-5404-4C4B-A7E4-AF9A1ECBE08E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6946287C-5404-4C4B-A7E4-AF9A1ECBE08E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6946287C-5404-4C4B-A7E4-AF9A1ECBE08E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

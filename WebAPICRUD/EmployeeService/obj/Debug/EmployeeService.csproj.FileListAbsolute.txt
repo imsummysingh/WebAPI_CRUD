@@ -87,3 +87,6 @@ C:\Users\ssingh687\source\repos\WebAPI_CRUD\WebAPICRUD\EmployeeService\obj\Debug
 C:\Users\ssingh687\source\repos\WebAPI_CRUD\WebAPICRUD\EmployeeService\obj\Debug\EmployeeService.pdb
 C:\Users\ssingh687\source\repos\WebAPI_CRUD\WebAPICRUD\EmployeeService\bin\EntityFramework.SqlServer.dll
 C:\Users\ssingh687\source\repos\WebAPI_CRUD\WebAPICRUD\EmployeeService\bin\EntityFramework.SqlServer.xml
+C:\Users\ssingh687\source\repos\WebAPI_CRUD\WebAPICRUD\EmployeeService\bin\System.Web.Cors.dll
+C:\Users\ssingh687\source\repos\WebAPI_CRUD\WebAPICRUD\EmployeeService\bin\System.Web.Http.Cors.dll
+C:\Users\ssingh687\source\repos\WebAPI_CRUD\WebAPICRUD\EmployeeService\bin\System.Web.Http.Cors.xml

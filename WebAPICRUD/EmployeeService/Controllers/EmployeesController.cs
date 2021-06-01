@@ -10,11 +10,30 @@ namespace EmployeeService.Controllers
 {
     public class EmployeesController : ApiController
     {
-        public IEnumerable<Employee> Get()
+        //public IEnumerable<Employee> Get()
+        //{
+        //    using (EmployeeDBEntities entities = new EmployeeDBEntities())
+        //    {
+        //        return entities.Employees.ToList();
+        //    }
+        //}
+
+        //for query string, for gender
+        public HttpResponseMessage Get(string gender="All")
         {
             using (EmployeeDBEntities entities = new EmployeeDBEntities())
             {
-                return entities.Employees.ToList();
+                switch (gender.ToLower())
+                {
+                    case "all":
+                        return Request.CreateResponse(HttpStatusCode.OK, entities.Employees.ToList());
+                    case "male":
+                        return Request.CreateResponse(HttpStatusCode.OK, entities.Employees.Where(e => e.Gender.ToLower() == "male").ToList());
+                    case "female":
+                        return Request.CreateResponse(HttpStatusCode.OK, entities.Employees.Where(e => e.Gender.ToLower() == "female").ToList());
+                    default:
+                        return Request.CreateErrorResponse(HttpStatusCode.BadRequest, "Value for gender must be Male, Female or All. " + gender + " Invald");
+                }
             }
         }
         //public Employee Get(int id)
@@ -147,14 +166,48 @@ namespace EmployeeService.Controllers
                     else
                     {
                         return Request.CreateErrorResponse(HttpStatusCode.NotFound, "Employee with Id = " + id.ToString() + " not found");
-                    }                    
+                    }
                 }
-            }catch(Exception ex)
-            {
-                return Request.CreateErrorResponse(HttpStatusCode.BadGateway,ex);
             }
-            
+            catch (Exception ex)
+            {
+                return Request.CreateErrorResponse(HttpStatusCode.BadGateway, ex);
+            }
+
         }
+
+        //FromURI and FromBody
+        //public HttpResponseMessage Put([FromBody]int id, [FromUri] Employee employee)
+        //{
+        //    try
+        //    {
+        //        using (EmployeeDBEntities entities = new EmployeeDBEntities())
+        //        {
+        //            var entity = entities.Employees.FirstOrDefault(e => e.ID == id);
+
+        //            if (entity != null)
+        //            {
+        //                entity.FirstName = employee.FirstName;
+        //                entity.LastName = employee.LastName;
+        //                entity.Gender = employee.Gender;
+        //                entity.Salary = employee.Salary;
+
+        //                entities.SaveChanges();
+
+        //                return Request.CreateResponse(HttpStatusCode.OK);
+        //            }
+        //            else
+        //            {
+        //                return Request.CreateErrorResponse(HttpStatusCode.NotFound, "Employee with Id = " + id.ToString() + " not found");
+        //            }
+        //        }
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        return Request.CreateErrorResponse(HttpStatusCode.BadGateway, ex);
+        //    }
+
+        //}
 
     }
 }
