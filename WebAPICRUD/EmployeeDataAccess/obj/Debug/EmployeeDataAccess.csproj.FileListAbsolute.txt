@@ -9,3 +9,4 @@ C:\Users\ssingh687\source\repos\WebAPI_CRUD\WebAPICRUD\EmployeeDataAccess\obj\De
 C:\Users\ssingh687\source\repos\WebAPI_CRUD\WebAPICRUD\EmployeeDataAccess\obj\Debug\EmployeeDataAccess.csproj.CopyComplete
 C:\Users\ssingh687\source\repos\WebAPI_CRUD\WebAPICRUD\EmployeeDataAccess\obj\Debug\EmployeeDataAccess.dll
 C:\Users\ssingh687\source\repos\WebAPI_CRUD\WebAPICRUD\EmployeeDataAccess\obj\Debug\EmployeeDataAccess.pdb
+C:\Users\ssingh687\source\repos\WebAPI_CRUD\WebAPICRUD\EmployeeDataAccess\obj\Debug\EmployeeDataAccess.csprojAssemblyReference.cache
