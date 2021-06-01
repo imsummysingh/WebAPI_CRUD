@@ -80,3 +80,7 @@ C:\Users\ssingh687\source\repos\WebAPI_CRUD\WebAPICRUD\WebAPICRUD\obj\Debug\WebA
 C:\Users\ssingh687\source\repos\WebAPI_CRUD\WebAPICRUD\WebAPICRUD\obj\Debug\WebAPICRUD.csproj.CopyComplete
 C:\Users\ssingh687\source\repos\WebAPI_CRUD\WebAPICRUD\WebAPICRUD\obj\Debug\WebAPICRUD.dll
 C:\Users\ssingh687\source\repos\WebAPI_CRUD\WebAPICRUD\WebAPICRUD\obj\Debug\WebAPICRUD.pdb
+C:\Users\ssingh687\source\repos\WebAPI_CRUD\WebAPICRUD\WebAPICRUD\bin\EntityFramework.dll
+C:\Users\ssingh687\source\repos\WebAPI_CRUD\WebAPICRUD\WebAPICRUD\bin\EntityFramework.SqlServer.dll
+C:\Users\ssingh687\source\repos\WebAPI_CRUD\WebAPICRUD\WebAPICRUD\bin\EntityFramework.xml
+C:\Users\ssingh687\source\repos\WebAPI_CRUD\WebAPICRUD\WebAPICRUD\bin\EntityFramework.SqlServer.xml
